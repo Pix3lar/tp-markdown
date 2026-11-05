@@ -2,18 +2,19 @@
 
 Cette fiche résume l'emploi de l'outil. Les données sont fictives.
 
-### Préparer l'environnement
+## Préparer l'environnement
 
 Étapes à suivre :
 
 - Installer Python
- - Vérifier la version avec `python --version`
- - Prévoir la version 3.10 ou une plus récente
+  - Vérifier la version avec `python --version`
+  - Prévoir la version 3.10 ou une plus récente
 - Cloner le dépôt
 
-##Options de la commande
+## Options de la commande
 
 | Option | Effet |
+|---|---|
 | `--commune` | filtre par commune |
 | `--mois` | filtre par mois |
 
@@ -27,35 +28,36 @@ python -m pluvio.cli data/pluies_fictives.csv --commune "Le Lamentin"
 
 Résultat :
 
-```
+```text
 Relevés : 15
 Total : 170.4 mm
 ```
 
 ## Ressources
 
-Le jeu de données : [pluies_fictives.csv] (../data/pluies_fictives.csv).
+Le jeu de données : [pluies_fictives.csv](../data/pluies_fictives.csv).
 
-![](../docs/schema_flux.svg)
+![Schéma du flux de données](../docs/schema_flux.svg)
 
 ## Contact
 
-Service fictif des relevés
-12 rue de l'Exemple
+Service fictif des relevés  
+12 rue de l'Exemple  
 Fort-de-France
 
 ## Remarques
 
 Remplacer <commune> par le nom de la commune voulue.
 
-** À vérifier ** : les totaux sont arrondis à une décimale.
+**À vérifier** : les totaux sont arrondis à une décimale.
 
 ## À faire
 
-- [] Relire la fiche
+- [ ] Relire la fiche
 - [x] Écrire la fiche
 
 ## Contenu de requirements.txt
 
 ```text
 pytest>=7
+```
