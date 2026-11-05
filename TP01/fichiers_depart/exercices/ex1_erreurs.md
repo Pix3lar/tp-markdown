@@ -59,5 +59,5 @@ Remplacer <commune> par le nom de la commune voulue.
 ## Contenu de requirements.txt
 
 ```text
-pytest>=7
+pytest>=7 
 ```
