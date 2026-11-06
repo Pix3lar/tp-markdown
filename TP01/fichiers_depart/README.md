@@ -147,3 +147,4 @@ Poussez la branche avec ```git push -u origin NOM_DE_BRANCHE```, puis ouvrez une
 Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE].
 
 ## Contact
+Pour une question/un bug ouvrez une issue sur le dépôt GitHub : ```https://github.com/Pix3lar/tp-markdown/issues```.
