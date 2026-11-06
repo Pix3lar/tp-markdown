@@ -116,7 +116,7 @@ La commande renvoie le code 0 en cas de succès, 1 si aucun relevé ne
 correspond aux critères et 2 si le fichier ne peut pas être lu.
 
 ## Tests
-Lancez pytest depuis la racine du projet et avec l'environnement virtuel activé. Le résultat attendu est 40 passed, ce qui veux dire que tous les tests réussissent.
+Racine : lancez pytest avec l'environnement virtuel activé (40 passed).
 
 ## Arborescence
 .
@@ -149,9 +149,9 @@ Lancez pytest depuis la racine du projet et avec l'environnement virtuel activé
 ## Contribution
 Mettez ```main``` à jour avec ```git switch main``` puis ```git pull```.
 Créez une branche de travail avec ```git switch -c NOM_DE_BRANCHE```.
-Faites des commits courts, un par idée, au format ```type: résumé```, où ```type``` vaut ```docs```, ```fix```, ```test```, ```feat```.
+Faites des commits courts, au format ```type: résumé```.
 Vérifiez que ```pytest``` réussit avant de pousser.
-Poussez la branche avec ```git push -u origin NOM_DE_BRANCHE```, puis ouvrez une pull request vers ```main``` pour qu'elle soit relue avant la fusion.
+Poussez avec ```git push -u origin NOM_DE_BRANCHE```, puis ouvrez une PR.
 
 ## Licence
 Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE].
