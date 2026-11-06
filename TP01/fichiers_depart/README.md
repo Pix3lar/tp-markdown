@@ -137,6 +137,11 @@ Lancez pytest depuis la racine du projet et avec l'environnement virtuel activé
 └── verifier_readme.py        # contrôle automatique d'un README
 
 ## Contribution
+Mettez ```main``` à jour avec ```git switch main``` puis ```git pull```.
+Créez une branche de travail avec ```git switch -c NOM_DE_BRANCHE```.
+Faites des commits courts, un par idée, au format ```type: résumé```, où ```type``` vaut ```docs```, ```fix```, ```test```, ```feat```.
+Vérifiez que ```pytest``` réussit avant de pousser.
+Poussez la branche avec ```git push -u origin NOM_DE_BRANCHE```, puis ouvrez une pull request vers ```main``` pour qu'elle soit relue avant la fusion.
 
 ## Licence
 
