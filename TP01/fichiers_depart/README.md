@@ -44,6 +44,67 @@ pip install -r requirements.txt
 
 ## Utilisation
 
+Lancez les commandes depuis la racine du projet, environnement virtuel
+activé. L'outil prend en argument le chemin d'un fichier CSV dont les
+colonnes sont `date`, `commune` et `pluie_mm` ; les lignes qui commencent
+par `#` sont ignorées. Le schéma suivant montre le trajet des données :
+
+![Flux de pluvio : CSV, stats.py, cli.py, terminal](docs/schema_flux.svg)
+
+Total de pluie de chaque commune :
+
+```bash
+python -m pluvio.cli data/pluies_fictives.csv --par-commune
+```
+
+```text
+Commune           Total (mm)
+Fort-de-France         115.6
+La Trinité             171.4
+Le Lamentin            170.4
+Le Robert              203.3
+Sainte-Anne            190.8
+Schœlcher              225.0
+```
+
+Statistiques d'une seule commune (nom entre guillemets, car il contient une
+espace) :
+
+```bash
+python -m pluvio.cli data/pluies_fictives.csv --commune "Le Robert"
+```
+
+```text
+Relevés : 15
+Total : 203.3 mm
+Moyenne : 13.6 mm
+Maximum : 34.6 mm (2025-01-02)
+```
+
+Statistiques d'une commune pour un mois donné :
+
+```bash
+python -m pluvio.cli data/pluies_fictives.csv --commune "Le Robert" --mois 2025-01
+```
+
+```text
+Relevés : 10
+Total : 140.4 mm
+Moyenne : 14.0 mm
+Maximum : 34.6 mm (2025-01-02)
+```
+
+Options de la commande (liste complète : `python -m pluvio.cli --help`) :
+
+| Option | Argument | Rôle | Exemple |
+|---|---|---|---|
+| `--commune` | texte | ne garder que cette commune | `--commune "Le Robert"` |
+| `--mois` | AAAA-MM | ne garder que ce mois | `--mois 2025-01` |
+| `--par-commune` | aucun | afficher le total de chaque commune | `--par-commune` |
+
+La commande renvoie le code 0 en cas de succès, 1 si aucun relevé ne
+correspond aux critères et 2 si le fichier ne peut pas être lu.
+
 ## Tests
 Lancez pytest depuis la racine du projet et avec l'environnement virtuel activé. Le résultat attendu est 40 passed, ce qui veux dire que tous les tests réussissent.
 
