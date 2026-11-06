@@ -37,6 +37,7 @@ def titres(texte):
 
 
 def sections_manquantes(texte, attendues=SECTIONS_ATTENDUES):
+    """Retourner les sections attendues absentes du texte."""
     titres_normalises = [normaliser(intitule) for _, intitule in titres(texte)]
     return [
         section for section in attendues
@@ -46,6 +47,7 @@ def sections_manquantes(texte, attendues=SECTIONS_ATTENDUES):
 
 
 def blocs_sans_langage(texte):
+    """Retourner les numéros des blocs de code sans langage."""
     resultat = []
     dans_un_bloc = False
     for numero, ligne in enumerate(texte.splitlines(), start=1):
