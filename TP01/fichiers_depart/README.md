@@ -5,6 +5,12 @@
 
 ## Description
 
+`pluvio` est un petit outil Python en ligne de commande. Il lit un fichier
+CSV de relevés de pluie de communes de Martinique et calcule des
+statistiques : nombre de relevés, total, moyenne, maximum, total par commune.
+Il s'adresse à toute personne qui découvre le projet et veut obtenir ces
+statistiques depuis un terminal, sans écrire de code.
+
 ## Prérequis
 
 ## Installation
