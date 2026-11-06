@@ -19,6 +19,29 @@ statistiques depuis un terminal, sans écrire de code.
 
 ## Installation
 
+Clonez le dépôt, placez-vous à la racine du projet, créez un environnement
+virtuel dans le dossier `.venv`, activez-le, puis installez les dépendances.
+
+Sous Linux et macOS (bash) :
+
+```bash
+git clone https://github.com/Pix3lar/tp-markdown.git
+cd tp-markdown/TP01/fichiers_depart
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Sous Windows (PowerShell) :
+
+```powershell
+git clone https://github.com/Pix3lar/tp-markdown.git
+cd tp-markdown\TP01\fichiers_depart
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
 ## Utilisation
 
 ## Tests
