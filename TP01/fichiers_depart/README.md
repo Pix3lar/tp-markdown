@@ -13,6 +13,10 @@ statistiques depuis un terminal, sans écrire de code.
 
 ## Prérequis
 
+- Python 3.10 ou plus récent
+- Git, pour cloner le dépôt
+- pytest 7 ou plus récent, installé avec les dépendances (voir Installation)
+
 ## Installation
 
 ## Utilisation
