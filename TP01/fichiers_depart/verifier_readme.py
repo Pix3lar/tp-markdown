@@ -37,13 +37,24 @@ def titres(texte):
 
 
 def sections_manquantes(texte, attendues=SECTIONS_ATTENDUES):
-    # TODO (Ex.4, question 1) : écrire la docstring, puis le corps.
-    raise NotImplementedError
+    titres_normalises = [normaliser(intitule) for _, intitule in titres(texte)]
+    return [
+        section for section in attendues
+        if not any(normaliser(section) in intitule
+                   for intitule in titres_normalises)
+    ]
 
 
 def blocs_sans_langage(texte):
-    # TODO (Ex.4, question 2) : écrire la docstring, puis le corps.
-    raise NotImplementedError
+    resultat = []
+    dans_un_bloc = False
+    for numero, ligne in enumerate(texte.splitlines(), start=1):
+        ligne = ligne.strip()
+        if ligne.startswith("```"):
+            if not dans_un_bloc and ligne == "```":
+                resultat.append(numero)
+            dans_un_bloc = not dans_un_bloc
+    return resultat
 
 
 def main(argv=None):
