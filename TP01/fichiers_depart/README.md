@@ -42,6 +42,16 @@ py -m venv .venv
 pip install -r requirements.txt
 ```
 
+Sous Windows (Git Bash) :
+
+```bash
+git clone https://github.com/Pix3lar/tp-markdown.git
+cd tp-markdown/TP01/fichiers_depart
+python -m venv .venv
+source .venv/Scripts/activate
+pip install -r requirements.txt
+```
+
 ## Utilisation
 
 Lancez les commandes depuis la racine du projet, environnement virtuel
