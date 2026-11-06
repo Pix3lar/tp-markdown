@@ -27,4 +27,4 @@ releves = stats.lire_releves("data/pluies_fictives.csv")
 print(len(releves))
 ```
 
-*Rappel* : les données sont fictives.
+*Rappel* : les données sont fictives. 
