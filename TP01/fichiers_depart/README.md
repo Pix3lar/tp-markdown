@@ -144,5 +144,6 @@ Vérifiez que ```pytest``` réussit avant de pousser.
 Poussez la branche avec ```git push -u origin NOM_DE_BRANCHE```, puis ouvrez une pull request vers ```main``` pour qu'elle soit relue avant la fusion.
 
 ## Licence
+Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE].
 
 ## Contact
